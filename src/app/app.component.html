@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<main
+  [@rotateFlipToLeft]="getState(o)"
+  [@rotateFlipToRight]="getState(o)"
+  [@rotateCubeToBottom]="getState(o)"
+  [@rotateRoomToLeft]="getState(o)"
+  class="router-wrapper"
+>
+  <router-outlet #o="outlet"></router-outlet>
+</main>
